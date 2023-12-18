@@ -23,9 +23,6 @@ public class EmpresaServiceImpl implements EmpresaService {
     @Override
     public List<Empresa> obtenerUltimosTresRegistros() {
         // Lógica para obtener los 3 últimos registros de empresas
-        // Utiliza empresaRepository para interactuar con la base de datos
-        // Lógica para obtener los 3 últimos registros de empresas
-        // Utiliza empresaRepository para interactuar con la base de datos
         List<Empresa> empresas = empresaRepository.findAll();
         int size = empresas.size();
         if (size > 3) {
